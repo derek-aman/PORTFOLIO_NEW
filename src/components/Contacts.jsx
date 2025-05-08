@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg.png";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa"; // Fixed import
+import { FaTwitter } from "react-icons/fa"; 
 import { IoMdMail } from "react-icons/io";
 
 const Contacts = () => {
@@ -15,10 +15,10 @@ const Contacts = () => {
 
       <div className='w-full flex flex-col md:flex-row gap-5 border-t-[1px] border-[#fbfeff] mt-10 md:mt-20'>
 
-        {/* Left Side: Icons + Logo */}
+       
         <div className='w-full md:w-1/2 flex items-center justify-center'>
           <div className="flex items-center gap-6 opacity-80">
-            {/* Social Icons column */}
+          
             <div className="flex flex-col gap-4 text-3xl text-white">
             <a href="https://www.linkedin.com" className="hover:text-[#00d8ff] transition duration-300 ease-in-out">
             <IoMdMail />
@@ -37,24 +37,23 @@ const Contacts = () => {
               </a>
             </div>
 
-            {/* Logo */}
+         
             <img src={logo} alt="Logo" className="w-3/4 md:w-2/3 object-contain opacity-50" />
           </div>
         </div>
 
-        {/* Right Form */}
+       
         <div className='w-full md:w-1/2 px-4 md:px-8 py-6'>
         <form 
   action="https://formsubmit.co/amanwork.co.in@gmail.com"
   method="POST"
   className="flex flex-col space-y-4 mt-10 md:mt-20"
 >
-  {/* Hidden Fields */}
+ 
   <input type="hidden" name="_captcha" value="false" />
   <input type="hidden" name="_template" value="box" />
   <input type="hidden" name="_subject" value="New Contact Form Submission!" />
 
-  {/* User Inputs */}
   <input
     type="text"
     name="name"

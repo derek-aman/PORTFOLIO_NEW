@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import Aman_Kumar_Resume from "../assets/Aman_Kumar_Resume.pdf"
+import Aman_Kumar_Resume from "../assets/Aman_Kumar_Resume.pdf";
 
 const LandingPage = () => {
   const name = "Aman Kumar";
@@ -22,7 +22,12 @@ const LandingPage = () => {
   };
 
   return (
-    <div data-scroll data-scroll-speed="-.3" id="home" className='w-full h-screen bg-zinc-900 pt-1 flex flex-col justify-center'>
+    <div
+      data-scroll
+      data-scroll-speed="-.3"
+      id="home"
+      className="w-full min-h-screen bg-zinc-900 pt-1 flex flex-col justify-center"
+    >
       <div className="textstructure px-6 md:px-20 text-center">
         <div className="masker">
           <motion.div
@@ -47,22 +52,35 @@ const LandingPage = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 1 }}
-          className="masker"
+          className="masker mt-4"
         >
-          <h1 className='uppercase text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] leading-[1em] tracking-tighter font-["Founders Frotesk"] font-bold'>
+          <h1 className='uppercase text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[7vw] leading-[1em] tracking-tighter font-["Founders Frotesk"] font-bold'>
             {title}
           </h1>
         </motion.div>
       </div>
 
-      <div className='border-t-[1px] border-zinc-800 mt-10 md:mt-20 mx-6 md:mx-20'></div>
+      <div className="w-full px-6 md:px-20 mt-32">
+        <div className='border-t border-zinc-700 w-full max-w-6xl mx-auto'></div>
+      </div>
 
-      <div className='flex flex-col md:flex-row justify-center md:justify-between items-center px-6 md:px-20 mt-6 gap-4 md:gap-0 text-center'>
-        <div className='px-5 py-2 border-2 border-zinc-500 rounded-full text-sm font-light cursor-pointer'>
-          <a href={Aman_Kumar_Resume} download className='download-btn'>Download CV</a>
-        </div>
-        <div className='px-5 py-2 border-2 border-zinc-500 rounded-full text-sm font-light cursor-pointer'>
-          <a href="#contacts">Contact me</a>
+      <div className="w-full px-6 md:px-20 mt-10">
+        <div className="flex justify-center sm:justify-between items-center max-w-6xl mx-auto flex-wrap gap-4">
+          <a
+            href={Aman_Kumar_Resume}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 border-2 border-zinc-500 text-white rounded-full text-sm font-light hover:bg-zinc-800 transition"
+          >
+            Download CV
+          </a>
+          <a
+            href="#contacts"
+            className="px-6 py-2 border-2 border-zinc-500 text-white rounded-full text-sm font-light hover:bg-zinc-800 transition"
+          >
+            Contact me
+          </a>
         </div>
       </div>
     </div>
