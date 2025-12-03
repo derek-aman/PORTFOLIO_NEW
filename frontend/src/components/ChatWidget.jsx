@@ -36,7 +36,7 @@ const ChatWidget = () => {
     if (!input.trim()) return;
     setIsPolishing(true);
     try {
-      const response = await fetch('http://localhost:5000/api/polish', {
+      const response = await fetch('https://portfolio-backend-bnuf.onrender.com/api/polish', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: input }),
@@ -61,7 +61,7 @@ const ChatWidget = () => {
     setSuggestions([]);
 
     try {
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch('https://portfolio-backend-bnuf.onrender.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         // Send history so the bot knows context
