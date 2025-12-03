@@ -40,7 +40,7 @@ const projects = [
 const Projects = () => {
   return (
     <div data-scroll data-scroll-speed="-.1" id="projects" className="w-full min-h-screen px-8 py-16 bg-transparent">
-      <h2 className="text-black text-[6vw] md:text-[3vw] leading-[7vw] md:leading-[4.5vw] tracking-tight text-center  md:text-center font-['Neue Montreal'] mb-12">Projects</h2>
+      <h2 className="text-black text-[7vw] md:text-[4vw] leading-[7vw] md:leading-[4.5vw]  text-center  md:text-center font-['Neue Montreal'] mb-12">PROJECTS</h2>
       {/* <div className='w-full flex flex-col md:flex-row gap-5 border-t-[1px] border-black mt-10 md:mt-20'></div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">

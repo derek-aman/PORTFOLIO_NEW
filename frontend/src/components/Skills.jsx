@@ -79,13 +79,13 @@ const Skills = () => {
   return (
     <div  data-scroll data-scroll-section id="skills" className="w-full min-h-screen bg-gradient-to-br from-[#f6f8fb] to-[#e4e9f0] px-6 py-20  text-gray-900 font-['Neue Montreal']">
       <motion.h2
-        className='font-["Neue Montreal"] text-[6vw] md:text-[3vw] leading-[7vw] md:leading-[4.5vw] tracking-tight text-center  md:text-center'
+        className='font-["Neue Montreal"] text-[7vw] md:text-[4vw] leading-[7vw] md:leading-[4.5vw]  text-center  md:text-center'
         variants={titleVariant}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        Skills
+        SKILLS
       </motion.h2>
       <div className='border-t-[1px] border-zinc-700 mt-10 md:mt-20 mx-6 md:mx-20'></div>
 
@@ -103,7 +103,7 @@ const Skills = () => {
             }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-8 text-black">{cat.title}</h3>
+            <h3 className="text-2xl  mb-8 text-black">{cat.title}</h3>
             <div className="flex flex-wrap justify-center gap-10">
               {cat.skills.map((skill, i) => (
                 <motion.div

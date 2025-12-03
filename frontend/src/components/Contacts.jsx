@@ -9,8 +9,8 @@ import { IoMdMail } from "react-icons/io";
 const Contacts = () => {
   return (
     <div data-scroll data-scroll-section  data-scroll-speed=".02" id="contacts" className='w-full p-6 md:p-20 bg-[#282c34] rounded-tl-3xl text-white'>
-      <h1 className='font-["Neue Montreal"] text-[6vw] md:text-[3vw] leading-[7vw] md:leading-[4.5vw] tracking-tight text-center md:text-left'>
-        Contact Me
+      <h1 className='font-["Neue Montreal"] text-[7vw] md:text-[4vw] leading-[7vw] md:leading-[4.5vw]  text-center md:text-left'>
+        CONTACT
       </h1>
 
       <div className='w-full flex flex-col md:flex-row gap-5 border-t-[1px] border-[#fbfeff] mt-10 md:mt-20'>
