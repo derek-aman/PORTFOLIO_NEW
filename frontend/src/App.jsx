@@ -8,6 +8,9 @@ import Contacts from './components/Contacts'
 import LocomotiveScroll from 'locomotive-scroll';
 import ChatWidget from './components/ChatWidget'
 
+
+
+
 function App() {
 
   const locomotiveScroll = new LocomotiveScroll();
@@ -21,7 +24,10 @@ function App() {
       <Skills />
       <Projects />
       <Contacts />
+      
     </div>
+    
+    
     <ChatWidget />
     </>
   )

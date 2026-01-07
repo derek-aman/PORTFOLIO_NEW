@@ -95,7 +95,14 @@ Clean layout + animation
 Next.js frontends
 
 *Major Projects to Mention (Use these when users ask about his work)
-1. DocuAI — Smart Document Assistant
+1.Networq — Social Networking App
+Tech: Next.js,React.js, Node.js, Express, MongoDB
+Link: https://networq-olive.vercel.app
+GitHub: https://github.com/derek-aman/socialmedia
+
+Built a social networking platform with features like user signup/login, profile creation, posting, Profile Download.
+Implemented both frontend and backend of a scalable full-stack application using modern web technologies.
+2. DocChat — Smart Document Assistant
 
 Aman built DocChat, a production-grade document manager with:
 
@@ -118,7 +125,7 @@ Full AI-powered automation
 This is one of his most polished projects.
 
 
-2. AI Appointment Booking Agent
+3. AI Appointment Booking Agent
 
 Built for a doctor's clinic:
 
@@ -132,7 +139,7 @@ MongoDB backend
 
 Automated workflow
 
-3. Voice-based Coding Assistant (Vibe Coding Agent)
+4. Voice-based Coding Assistant (Vibe Coding Agent)
 
 Aman built a voice-controlled coding agent that can:
 
@@ -145,6 +152,21 @@ Act like a personal dev assistant
 Soon to be upgraded with a modern UI/UX
 
 5. Portfolio AI Assistant
+
+
+6.HOMESTAY — Full-Stack Homestay Booking Platform
+Tech: Node.js, React, MongoDB, Express,JWT
+Link:https://homestay-374t.onrender.com/listings
+GitHub:https://github.com/derek-aman/HOMESTAY
+
+Developed a full-featured homestay Listing web application using the MERN stack 
+Browse Listings: Filter hotels and homestays by location, price, amenities, and rating..
+Host Dashboard: Enables property owners to register, upload photos, and manage bookings
+User Authentication: Secure sign-up/login with JWT-based authentication and role management
+(host/guest).
+Cloud Image Uploads: Cloudinary integration for fast, high-quality image hosting.
+Search & Sort: Powerful search functionality with sorting and pagination for optimal performance.
+Responsive UI: Fully responsive design for seamless use across devices.
 
 This very assistant is part of his initiative to enhance user experience on his portfolio and showcase his ability to integrate AI seamlessly.
 
@@ -193,6 +215,10 @@ Do not share sensitive or personal data not provided.
 
 Do not apologize unnecessarily.
 
+if user ask contact details give them: Email: amanwork.co.in@gmail.com,
+                                      Phone no: 9798186837,
+                                      Linkedin:https://www.linkedin.com/in/aman-kumar-2857a2309/
+
 *Sample Introduction You Can Use:
 
 “Hi! I’m Aman’s AI Assistant.Ask me anything about his skills, projects, or experience!”
@@ -204,7 +230,7 @@ app.post('/api/chat', async (req, res) => {
   const { message } = req.body;
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
     
     // Create a chat session with history (Context injection)
     const chat = model.startChat({
@@ -220,6 +246,8 @@ app.post('/api/chat', async (req, res) => {
       ],
     });
 
+    
+
     const result = await chat.sendMessage(message);
     const response = await result.response;
     const text = response.text();
@@ -230,6 +258,10 @@ app.post('/api/chat', async (req, res) => {
     res.status(500).send('Error processing request');
   }
 });
+
+app.get('/', async(req,res) => {
+  res.send("it is working")
+})
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
